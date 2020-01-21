@@ -62,7 +62,7 @@ r: read	w: write	x: execute
 4. 새 소스코드 배포
 
 - screen으로 실행되고 있던 서버 종료
-- 서버에 있는 소스폴더를 통째로 삭제 ( ssh -i ~/.ssh/wps12th.pem ubuntu@13.125.38.8 sudo rm -rf /home/ubuntu/projects/instagram )
-- 로컬에 있는 소스폴더 올리기 /( scp -i ~/.ssh/wps12th.pem -r ~/projects/wps12th/instagram ubuntu@13.125.38.8:/home/ubuntu/projects/ )
+- 서버에 있는 소스폴더를 통째로 삭제 ( ssh -i ~/.ssh/wps12th.pem ubuntu@아이피주소 sudo rm -rf /home/ubuntu/projects/instagram )
+- 로컬에 있는 소스폴더 올리기 /( scp -i ~/.ssh/wps12th.pem -r ~/projects/wps12th/instagram ubuntu@아이피주소:/home/ubuntu/projects/ )
 - screen을 이용해서 서버 실행
 
