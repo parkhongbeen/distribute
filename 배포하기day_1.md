@@ -42,9 +42,27 @@ r: read	w: write	x: execute
 
 
 
-1. runserver실행 (Django실행)
+1. runserver실행을 위해 필요한 것 (Django실행)
 
 - Python
 - DJango
 
 2. 외부에서 접근가능한지 확인
+
+3.  screen으로 지속적으로 켜져있게 하기
+
+- ssh 접속
+
+  $ screen S 세션명 / 스크린실행 
+
+  `$ screen -R 세션명 / 스크린나가기`
+
+  `$ screen -list / 모든 screen목록을 보여줌`
+
+4. 새 소스코드 배포
+
+- screen으로 실행되고 있던 서버 종료
+- 서버에 있는 소스폴더를 통째로 삭제 ( ssh -i ~/.ssh/wps12th.pem ubuntu@13.125.38.8 sudo rm -rf /home/ubuntu/projects/instagram )
+- 로컬에 있는 소스폴더 올리기 /( scp -i ~/.ssh/wps12th.pem -r ~/projects/wps12th/instagram ubuntu@13.125.38.8:/home/ubuntu/projects/ )
+- screen을 이용해서 서버 실행
+
