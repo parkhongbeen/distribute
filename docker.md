@@ -78,3 +78,4 @@ $ brew cask install docker
 ` $ docker build -t instagram -f Dockerfile . `
 
 `$ docker login`
+
