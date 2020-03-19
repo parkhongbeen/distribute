@@ -32,15 +32,10 @@
 
 대부분의 파일 시스템은 특정 사용자와 사용자그룹에 접근 권한을 할당하는 방식을 제공한다.이러한 시스템들은 사용자가 파일 시스템의 내용을 보거나 변경할 수 있는 기능을 제어한다.
 
-![스크린샷 2020-01-21 오후 2.06.36](/Users/hongbeen/Desktop/스크린샷 2020-01-21 오후 2.06.36.png)
-
-Owner	Group	Eveyone
-
-rwx			r-x			r-x
-
-r: read	w: write	x: execute 
-
-
+| owner   | group    | everyone   |
+| ------- | -------- | ---------- |
+| rwx     | r-x      | r-x        |
+| r: read | w: write | x: execute |
 
 1. runserver실행을 위해 필요한 것 (Django실행)
 
